@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/MessageFromTheCEO.css">    
+    <link rel="stylesheet" href="../../fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="shorcut icon" href="../../img/logo.jpg">
+    <link rel="stylesheet" href="../../css/mobilenav.css">
+    <title>People At Wellnest</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Of Body/Html  */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* End of body/ html  */
+
+
+/* Star of contactline  */
+.contactline {
+    font-size: 12px;
+    width: 100%;
+    height: 25px;
+    background-color: #39bcb2;
+    color: white;
+    padding: 3px 10%;
+    box-sizing: border-box;
+}
+
+.contactline a {
+    color: white;
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.contactline a:hover {
+    text-decoration: underline;
+}
+
+.contactlineleft {
+    float: left;
+}
+
+
+.contactlineright {
+    float: right;
+}
+
+
+
+/* End of contactline  */
+
+/* Start of header  */
+
+.header {
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+.navbar {
+  
+   background-color: white;
+   float: right;
+   padding-top: 20px;
+}
+
+.logo {
+   width: 100px;
+   height: 80px;
+   float: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.logo img {
+   width: 100%;
+}
+
+.dropdown {
+    z-index: 100;
+   position: relative;
+    float: left;
+    height:60px;
+    cursor: pointer;
+
+}
+
+.dropdown:hover .dropcontent {
+display: block;
+opacity: 1;
+}
+
+.dropdown li {
+list-style-type: none;
+}
+
+.dropbtn {
+   outline: none;
+   border: none;
+   padding: 10px;
+   font-size: 14px;
+   margin: 0 15px;
+   background-color: white;
+   color: rgb(56, 212, 205);
+   cursor: pointer;
+}
+
+.navlinkicon {
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    color: rgb(56, 212, 205);
+}
+
+
+
+.dropcontent {
+border-top: 5px solid rgb(56, 212, 205);;
+width: 200px;
+background-color: white;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+position: absolute;
+top: 60px;
+opacity: 0;
+display: none;
+animation: dropcontentdisplay 650ms ease;
+}
+
+@keyframes dropcontentdisplay {
+    from {
+        opacity: 0;
+    }   
+    
+    to {
+        opacity: 1;
+
+    }
+}
+
+
+.sublink {
+   color: #ddd;
+   display: block;
+   padding: 5px 0;
+   padding-left: 15px;
+   text-decoration: none;
+   font-size: 13px;
+}
+
+.sublink:hover {
+   background-color: #eee;
+   color:rgb(56, 212, 205)
+}
+
+/* End of header  */
+
+/* Start Of Body Title */
+
+.bodytitle  {
+    clear: both;
+}
+
+
+/* Start Of Body Title */
+
+
+
+/* Main Body Wrapper  */
+
+.maincontent  {
+    height: fit-content;
+    min-height: 100vh;
+    width: 85%;
+    margin: 10px auto;
+}
+
+/* End of main body wrapper  */
+
+
+
+.footer {
+    background-color: #555555;
+    color: white;
+    min-height: 300px;
+    height: fit-content;
+    font-size: 13px;
+}
+
+.footerwrapper {
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.footercards {
+    width: 28%;
+    min-width: 300px;
+    border-top: 1px solid #39bcb2;
+    margin: 20px 0;
+    margin-right: 10px;
+    
+}
+
+.cardheading {
+    color: rgb(22, 201, 141);
+    font-weight: 80;
+    padding: 20px 0;
+}
+
+
+.socialmediadiv {
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 17px;
+
+}
+
+.socialicon {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.facebook:hover {
+    color: rgba(124, 175, 233, 0.877);
+}
+
+.instagram:hover {
+    color: rgb(236, 192, 234);
+}
+
+.twitter:hover {
+    color: deepskyblue;
+}
+
+.youtube:hover {
+    color: red;
+}
+
+.googlemaps {
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    color: white; 
+    background: none; 
+    cursor: pointer;
+    
+}
+
+.googlemaps:hover {
+    color: rgb(86, 219, 108);
+}
+
+.mapicon {
+    padding: 0 10px;
+    padding-left: 0;
+    
+}
+
+
+
+/* End of footer  */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bodytitle {
+    background-color: rgb(43, 204, 182);
+    padding: 22px 0;
+    color: white;
+    margin: 0 auto;
+}
+
+.bodytitle h1 {
+    font-weight: 100;
+}
+    </style>
+</head>
+<body>
+    <!-- mainwrapper -->
+    <div class="contactline">
+        <div class="contactlineleft"><span class="emergline">Emergency Hotline: +233 000 0000</span></div>
+        <div class="contactlineright">
+
+            <span class="innercontri highlights">Highlights</span>
+            <span class="innercontri contactus">Contact Us</span>
+
+        </div>
+    </div>
+
+    <header class="header">
+        
+        <a href="#"> 
+            <div class="logo">
+                <img src="../../img/logo.jpg" alt="">
+        </div>
+            </div>
+    </a>
+
+        <nav class="navbar">
+            <div class="dropdown">
+                <span class="navlinkicon"><i class="fas fa-home"></i></span>
+                <a href="../../index.html"><button class="dropbtn">Home</button></a>               
+            </div>
+
+            <div class="dropdown">
+                <span class="navlinkicon"><i class="fas fa-users"></i></span>
+                <button class="dropbtn">About Us</button>
+
+                <div class="dropcontent">
+                   <ul>
+                       <li><a class="sublink" href="../about_us/message_from_the_ceo.html"Button>Message from our CEO</a></li>
+                       <li><a class="sublink" href="../about_us/peopleatwelnest.html"Button>People at Wellnest</a></li>
+                       <li><a class="sublink" href="../about_us/vissionandmission.html"Button>Mission, Vission and Values</a></li>
+                       <li><a class="sublink" href="#"Button>Accreditions & Awards</a></li>
+                       <li><a class="sublink" href="../about_us/ourMascot.html"Button>Our Mascot</a></li> 
+                       <li><a class="sublink" href="../about_us/corporateSocialResponsibilities.html"Button>Corporate Social Responsibility</a></li>                                             
+                   </ul>
+                </div>
+                
+            </div>
+
+            <div class="dropdown">
+                <span class="navlinkicon"><i class="fas fa-user-md"></i></span>
+                <button class="dropbtn">Service Area</button>
+
+                <div class="dropcontent">
+                   <ul>
+                    <li><a class="sublink" href="../service_area/keyclinicalservices.html"Button>Key Clinical Services</a></li>
+                    <li><a class="sublink" href="../service_area/ourdept.html"Button>Medical Departments</a></li>
+                    <li><a class="sublink" href="../service_area/medicalpakages.html"Button>Medical Pakages</a></li>                                             
+                   </ul>
+                </div>
+                
+            </div>
+
+            <div class="dropdown">
+                <span class="navlinkicon"><i class="fas fa-stethoscope"></i></span>
+                <button class="dropbtn">Medical Infomation</button>
+
+                <div class="dropcontent">
+                   <ul>
+                       <li><a class="sublink" href="#"Button>Medical Bronchures</a></li>
+                       <li><a class="sublink" href="#"Button>Health Articles</a></li>
+                       <li><a class="sublink" href="#"Button>Guidelines</a></li>
+                       <li><a class="sublink" href="#"Button>Newsletters</a></li>                                             
+                   </ul>
+                </div>
+                
+            </div>
+
+            <div class="dropdown">
+                <span class="navlinkicon"><i class="fas fa-users"></i></span>
+                <button class="dropbtn">Patients Guide</button>
+
+                <div class="dropcontent">
+                    <ul>
+                        <li><a class="sublink" href="../Patient_guide/patientguide.html"Button>Guide to Wellnest</a></li>
+                        <li><a class="sublink" href="../Patient_guide/insurance.html"Button>Insurnace</a></li>
+                        <li><a class="sublink" href="../Patient_guide/medicaltips.html"Button>Medical Tips</a></li>                                        
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- End of mainWrapper  -->
+    
+
+    <div class="maincontent">
+        <div class="bodytitle">
+            <h2 style = "font-weight: 90;">Special Pakages</h2>
+        </div>
+
+        <div class="innermainwrapper">
+            <div class="maincontentarticle">
+            <div class="articleimg1">
+                <img src="../../img/ourpeople.JPG" alt="">
+            </div>
+            <div class="maininfo1">
+                <div class="innerinfo">
+    
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Nostrum, reprehenderit tempore! Quis, omnis 
+                        magnam! Recusandae quod accusantium molestias, cumque 
+                        cum rem ipsam veniam sed eveniet obcaecati ex explicabo, 
+                        ad repellendus.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Nostrum, reprehenderit tempore! Quis, omnis 
+                        magnam! Recusandae quod accusantium molestias, cumque 
+                        cum rem ipsam veniam sed eveniet obcaecati ex explicabo, 
+                        ad repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit perspiciatis doloremque minus et, libero nulla 
+                        repellendus soluta aperiam neque. Fugit impedit nostrum 
+                        eius ex aliquid veritatis explicabo ipsam, rem, quis obcaecati 
+                        fugiat. Consequatur sapiente, voluptatem cupiditate architecto, 
+                        eveniet placeat fuga inventore adipisci non enim 
+                        dicta quibusdam nulla unde beatae ullam, iste a numquam 
+                        quidem dolor perspiciatis. Consequatur vel, eveniet 
+                        at repudiandae nobis dignissimos culpa corrupti repellendus 
+                        eligendi necessitatibus eum asperiores repellat tempora 
+                        cupiditate delectus. Tempore velit, voluptatum 
+                    </p>
+
+                    <p>
+                        eveniet placeat fuga inventore adipisci non enim 
+                        dicta quibusdam nulla unde beatae ullam, iste a numquam 
+                        quidem dolor perspiciatis. Consequatur vel, eveniet 
+                        at repudiandae nobis dignissimos culpa corrupti repellendus 
+                        eligendi necessitatibus eum asperiores repellat tempora 
+                        cupiditate delectus. Tempore velit, voluptatum 
+                    </p>
+
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Nostrum, reprehenderit tempore! Quis, omnis 
+                        magnam! Recusandae quod accusantium molestias, cumque 
+                        cum rem ipsam veniam sed eveniet obcaecati ex explicabo, 
+                        ad repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit perspiciatis doloremque minus et, libero nulla 
+                        repellendus soluta aperiam neque. Fugit impedit nostrum 
+                        eius ex aliquid veritatis explicabo ipsam, rem, quis obcaecati 
+                        fugiat. Consequatur sapiente, voluptatem cupiditate architecto, 
+                        eveniet placeat fuga inventore adipisci non enim 
+                        dicta quibusdam nulla unde beatae ullam, iste a numquam 
+                        quidem dolor perspiciatis. Consequatur vel, eveniet 
+                        at repudiandae nobis dignissimos culpa corrupti repellendus 
+                        eligendi necessitatibus eum asperiores repellat tempora 
+                        cupiditate delectus. Tempore velit, voluptatum 
+                    </p>
+
+                    <p>
+                        eveniet placeat fuga inventore adipisci non enim 
+                        dicta quibusdam nulla unde beatae ullam, iste a numquam 
+                        quidem dolor perspiciatis. Consequatur vel, eveniet 
+                    </p>
+
+
+                </div>
+
+                <div class="servicesbottomdiv bottomdivtop">
+                    <h3>Enjoy Our New Executive Screening Right Here at Wellnest Medical Center</h3>
+                    
+                    <p>
+                        eveniet placeat fuga inventore adipisci non enim 
+                        dicta quibusdam nulla unde beatae ullam, iste a numquam 
+                        quidem dolor perspiciatis. Consequatur vel, eveniet 
+                        at repudiandae nobis dignissimos culpa corrupti repellendus 
+                        eligendi necessitatibus eum asperiores repellat tempora 
+                        cupiditate delectus. Tempore velit, voluptatum 
+                    </p>
+
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Nostrum, reprehenderit tempore! Quis, omnis 
+                        magnam!
+                </div>
+
+                 <div class="servicesbottomdiv bottomdivbottom">
+                    <div class="bottomdivleft">
+                        <button class="servicelinks">Essential Male/Female <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Vibrant Male <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Vibrant Female <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Well Man <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Essential Male/Female <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Vibrant Male <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Vibrant Female <span style="font-size: 10px;">&#10095;</span></button>
+                        <button class="servicelinks">Well Man <span style="font-size: 10px;">&#10095;</span></button>
+                    </div>
+
+                    <div class="bottomdivright">
+                        <img style = "width: inherit; height: inherit;" src="../../img/bottombanner.jpg" alt="">
+                    </div>
+                </div>
+                
+               
+                
+            </div>
+                
+            </div>
+
+                
+            <div class="maincontentsidebar">
+                <div class="medicalinfo">
+                    <h2>Medical Information</h2>
+
+                    <p>Search By Keyword</p>
+
+                    <div class="searchwithicon">
+                        <input type="search" name="medicalinfo">
+                        <span class="searchicon"><i class="fas fa-search"></i></span>
+                    </div>
+
+                    <div class="medinfocontainer">
+                        <ul>
+                            <li><span class="medinforightarrow">&#10095;</span><a href="#link">Medical Bronchures</a></li>
+                            <li><span class="medinforightarrow">&#10095;</span><a href="#link">Heath Articles</a></li>
+                            <li><span class="medinforightarrow">&#10095;</span><a href="#link">Guidelines</a></li>
+                            <li><span class="medinforightarrow">&#10095;</span><a href="#link">News Letter</a></li>
+                            <li><a href="#link">More <span class="medinforightarrow">&#10095;</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- footer  -->
+    <footer class="footer">
+
+        <div class="footerwrapper">
+
+            <div class="footercards">
+                <h3 class="cardheading">About WellNest</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Quae quos officiis minus totam doloribus. 
+                    Unde architecto animi possimus praesentium ipsam. 
+                    Maiores harum, fuga deserunt et nulla rem ipsa reprehenderit 
+                    ullam.
+                </p>
+                <br>
+                <br>                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Quae quos officiis minus totam doloribus. 
+                    Unde architecto animi possimus praesentium ipsam. 
+                    Maiores harum, fuga deserunt et nulla rem ipsa reprehenderit 
+                    ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Tenetur, dicta.
+                </p>
+
+                <div class="socialmediadiv">
+                    <span class="socialicon facebook"><i class="fab fa-facebook-f"></i></span>
+                    <span class="socialicon instagram"><i class="fab fa-instagram"></i></span>
+                    <span class="socialicon twitter"><i class="fab fa-twitter"></i></span>
+                    <span class="socialicon youtube"><i class="fab fa-youtube"></i></span>
+                </div>
+            </div>
+    
+            <div class="footercards">
+                <h3 class="cardheading">WellNest Medical Center</h3>
+                <ul>
+                    <li>39 Jalan Kia Peng</li>
+                    <li>50450 Kuala Lumpur Malaysia</li>
+                </ul>
+                <br>
+                <button class="googlemaps"><span class="mapicon"><i class="fas fa-map-marker-alt"></i></span>Open in Google Maps</button>
+                <br><br>
+                <ul>
+                    <li>E-mail:</li>
+                    <li>corporate.affairs@wellnest.com</li>
+                    <li>Fax number: +60321600010</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>24 Hour Hotline</li>
+                    <li></li>
+                </ul>
+            </div>
+    
+            <div class="footercards">
+                <h3 class="cardheading">About WellNest</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Quae quos officiis minus totam doloribus. 
+                    Unde architecto animi possimus praesentium ipsam. 
+                    Maiores harum, fuga deserunt et nulla rem ipsa reprehenderit 
+                    ullam.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                    elit. Quae quos officiis minus totam doloribus. 
+                    Unde architecto animi possimus praesentium ipsam. 
+                    Maiores harum, fuga deserunt et nulla rem ipsa reprehenderit 
+                    ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Tenetur, dicta.
+                </p>
+            </div>
+
+        </div>
+        
+
+        
+    </footer>
+    <!-- End of footer  -->
+    <div class="heaerwrapper">
+   
+        <header class="mobileheader">
+    
+            <div class="mobilenavIcon">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+            </div>
+            <div class="navwrapper">
+    
+                <button class="dropbtn1">About Wellnest</button>
+                <div class="dropcontnet1">
+                    <ul>
+                        <li><a href="../files/about_us/message_from_the_ceo.html">Message From Our CEO</a></li>
+                        <li><a href="../files/about_us/peopleatwelnest.html">People At Wellnest</a></li>
+                        <li><a href="../about_us/vissionandmission.html">Mission, Vission and Values</a></li>
+                        <li><a href="#">Accreditations and Awards</a></li>
+                        <li><a href="../files/about_us/ourMascot.html">Our Mascot</a></li>
+                        <li><a href="../about_us/corporateSocialResponsibilities.html">Corportae and Social Responsibility</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+    
+            <div class="navwrapper">
+                
+                <button class="dropbtn1">Service Area</button>
+                <div class="dropcontnet1">
+                    <ul>
+                        <li><a href="../files/service_area/keyclinicalservices.html">Key Clinical Services</a></li>
+                        <li><a href="../files/service_area/medicalpakages.html">Medical Departments</a></li>
+                        <li><a href="../files/service_area/medicalpakages.html">Medical Pakages</a></li>
+                                               
+                    </ul>
+                </div>
+                
+            </div>
+    
+            <div class="navwrapper">
+                
+                <button class="dropbtn1">Medical Information</button>
+                <div class="dropcontnet1">
+                    <ul>
+                        <li><a href="../service_area/keyclinicalservices.html">Medical Brochures</a></li>
+                        <li><a href="../service_area/medicalpakages.html">guidelines</a></li>
+                                                                       
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="navwrapper">
+                
+                <button class="dropbtn1">Patients Guide</button>
+                <div class="dropcontnet1">
+                    <ul>
+                        <li><a href="../Patient_guide/patientguide.html">Guide to Wellnest</a></li>
+                        <li><a href="../Patient_guide/insurance.html">Insurance</a></li>
+                        <li><a href="../Patient_guide/medicaltips.html">Medial Tips</a></li>
+                                               
+                    </ul>
+                </div>
+                
+            </div>
+        </header>
+    
+    </div>
+    
+    
+        <script src="../../js/mobilenav.js"></script>
+
+        <div class="heaerwrapper">
+   
+            <header class="mobileheader">
+        
+                <div class="mobilenavIcon">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+                </div>
+                <div class="navwrapper">
+        
+                    <button class="dropbtn1">About Wellnest</button>
+                    <div class="dropcontnet1">
+                        <ul>
+                            <li><a href="../files/about_us/message_from_the_ceo.html">Message From Our CEO</a></li>
+                            <li><a href="../files/about_us/peopleatwelnest.html">People At Wellnest</a></li>
+                            <li><a href="../about_us/vissionandmission.html">Mission, Vission and Values</a></li>
+                            <li><a href="#">Accreditations and Awards</a></li>
+                            <li><a href="../files/about_us/ourMascot.html">Our Mascot</a></li>
+                            <li><a href="../about_us/corporateSocialResponsibilities.html">Corportae and Social Responsibility</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+        
+                <div class="navwrapper">
+                    
+                    <button class="dropbtn1">Service Area</button>
+                    <div class="dropcontnet1">
+                        <ul>
+                            <li><a href="../files/service_area/keyclinicalservices.html">Key Clinical Services</a></li>
+                            <li><a href="../files/service_area/medicalpakages.html">Medical Departments</a></li>
+                            <li><a href="../files/service_area/medicalpakages.html">Medical Pakages</a></li>
+                                                   
+                        </ul>
+                    </div>
+                    
+                </div>
+        
+                <div class="navwrapper">
+                    
+                    <button class="dropbtn1">Medical Information</button>
+                    <div class="dropcontnet1">
+                        <ul>
+                            <li><a href="../service_area/keyclinicalservices.html">Medical Brochures</a></li>
+                            <li><a href="../service_area/medicalpakages.html">guidelines</a></li>
+                                                                           
+                        </ul>
+                    </div>
+                    
+                </div>
+    
+                <div class="navwrapper">
+                    
+                    <button class="dropbtn1">Patients Guide</button>
+                    <div class="dropcontnet1">
+                        <ul>
+                            <li><a href="../Patient_guide/patientguide.html">Guide to Wellnest</a></li>
+                            <li><a href="../Patient_guide/insurance.html">Insurance</a></li>
+                            <li><a href="../Patient_guide/medicaltips.html">Medial Tips</a></li>
+                                                   
+                        </ul>
+                    </div>
+                    
+                </div>
+            </header>
+        
+        </div>
+        
+        
+            <script src="../../js/mobilenav.js"></script>
+</body>
+</html>

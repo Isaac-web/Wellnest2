@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bodytitle {
+    background-color: rgb(43, 204, 182);
+    padding: 22px 0;
+    color: white;
+    margin: 0 auto;
+}
+
+.bodytitle h1 {
+    font-weight: 100;
+}
+
+
+
+.innermainwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+
+.innermainwrapper dd {
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.innermainwrapper dh {
+    font-size: 13px;
+}
+
+.innermainwrapper .li {
+    list-style-position: inside;
+}
+
+
+.missionwrapper ul {
+    line-height: 30px;
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+.maincontentarticle {
+    width: 71%;
+    min-width: 300px;
+    min-height: 400px;
+    height: fit-content;
+}
+
+.maininfo1 {
+    margin: 5px 0;
+    box-sizing: border-box;    
+}
+
+.innerinfo {
+    min-height: 350px;
+}
+
+
+
+.maincontentsidebar {
+    width: 20%;
+    min-width: 350px;
+    min-height: 400px;
+    height: fit-content;
+    background-color: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.articleimg1 {
+    width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    height: fit-content;
+    height: fit-content;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.articleimg1 img {
+    width: 100%;
+}
+
+.innerinfo {
+    padding: 30px 0;
+    color: #999;
+}
+
+.maininfosidecard {
+    background: rgb(43, 204, 182);
+    width: 250px;
+    height: 400px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.3));
+    color: white;
+    text-align: center;
+}
+
+.maininfosidecard img {
+    width: 85%;
+    height: 300px;
+    margin: 15px 7.5%;
+}
+
+.innerinfo h3 {
+    font-weight: 90;
+    color: rgb(95, 7, 88);
+}
+
+.innerinfo p {
+    margin: 30px 0;
+    font-size: 13px;
+}
+
+
+
+
+.medicalinfo {
+    background-color: rgb(43, 204, 182);
+    width: 75%;
+    margin: 0px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    min-height: 500px;
+    padding: 0 20px;
+    color: white;
+}
+
+.medicalinfo h2 {
+    font-weight: 90;
+    padding: 20px 0px;
+}
+
+.medicalinfo p {
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+
+.searchwithicon {
+    position: relative;
+}
+
+.searchwithicon input {
+    height: 33px;
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-left: 5px;
+    width: 100%;
+    border: 1px solid #eee;
+    outline: none;
+}
+
+
+.searchwithicon .searchicon {
+    position: absolute;
+    color: white;
+    top: 0px; 
+    right: 0px;
+    display: block;
+    background-color: rgb(29, 139, 125);
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+.medicalinfo li  {
+    padding: 15px 0;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+.medicalinfo li:last-child {
+    border-bottom: none;
+}
+
+.medicalinfo a  {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.medicalinfo a:hover {
+    color: rgb(29, 139, 125)
+}
+
+.medinforightarrow {
+    color: white;
+    padding: 0 5px;
+    font-size: 13px;
+    font-size: 10px;
+}
+
+.copelistcont {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.copelist {
+    padding: 5px;   
+    list-style-position: inside;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .header {
+        display: none;
+    }
+
+    .innermainwrapper {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .cardimgcont {
+        width: 100%;
+    }
+
+    .maincontentsidebar {
+        min-width: 100%;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .medicalinfo {
+        width: 100%;
+    }
+
+    .cardimgcont {
+        min-width: 100%;
+        max-width: 250px;
+        margin: 10px auto;
+        
+        overflow: hidden;
+    }
+
+    .maincontent {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .maincontentarticle {
+        width: 100%;
+    }
+
+    .bottomdivbottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
